@@ -2,7 +2,7 @@
 #
 # Images and description on Docker Hub will be automatically rebuilt on
 # pushes to `master` branch of this repo and on updates of
-# parent `node` image.
+# parent `php` image.
 #
 # Note! Docker Hub `post_push` hook must be always up-to-date with default
 # values of current Makefile. To update it just use:
@@ -13,8 +13,8 @@
 
 
 IMAGE_NAME := instrumentisto/phpdoc
-VERSION ?= 2.8.5
-TAGS ?= 2.8.5,2.8,2,latest
+VERSION ?= 2.9.0
+TAGS ?= 2.9.0,2.9,2,latest
 
 no-cache ?= no
 

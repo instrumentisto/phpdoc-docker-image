@@ -4,7 +4,7 @@ MAINTAINER Instrumentisto Team <developer@instrumentisto.com>
 
 
 # Install phpDocumentor executable
-ADD https://github.com/phpDocumentor/phpDocumentor2/releases/download/v2.8.5/phpDocumentor.phar \
+ADD https://github.com/phpDocumentor/phpDocumentor2/releases/download/v2.9.0/phpDocumentor.phar \
     /usr/local/bin/phpdoc
 
 RUN chmod 755 /usr/local/bin/phpdoc \
