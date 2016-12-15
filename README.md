@@ -17,7 +17,8 @@ and DocBlock comments to generate a complete set of API Documentation.
 Inspired by phpDocumentor 1 and JavaDoc it continues to innovate and is up to
 date with the latest technologies and PHP language features.
 
-> [www.phpdoc.org](https://www.phpdoc.org)
+> [www.phpdoc.org](https://www.phpdoc.org)  
+> [github.com/phpDocumentor/phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2)
 
 ![phpDocumentor Logo](https://www.phpdoc.org/bundles/phpdocumentorwebsite/images/logo2.png)
 
