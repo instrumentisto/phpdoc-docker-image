@@ -48,9 +48,9 @@ image:
 parsed-tags = $(subst $(comma), $(space), $(TAGS))
 
 tags:
-	$(foreach tag, $(parsed-tags), \
-		docker tag $(IMAGE_NAME):$(VERSION) $(IMAGE_NAME):$(tag); \
-	)
+	(set -e ; $(foreach tag, $(parsed-tags), \
+		docker tag $(IMAGE_NAME):$(VERSION) $(IMAGE_NAME):$(tag) ; \
+	))
 
 
 # Manually push Docker images to Docker Hub.
@@ -59,9 +59,9 @@ tags:
 #	make push [TAGS=t1,t2,...]
 
 push:
-	$(foreach tag, $(parsed-tags), \
-		docker push $(IMAGE_NAME):$(tag); \
-	)
+	(set -e ; $(foreach tag, $(parsed-tags), \
+		docker push $(IMAGE_NAME):$(tag) ; \
+	))
 
 
 
