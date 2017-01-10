@@ -68,7 +68,7 @@ push:
 # Make manual release of Docker images to Docker Hub.
 #
 # Usage:
-#	make manual-release [no-cache=(yes|no)] [VERSION=] [TAGS=t1,t2,...]
+#	make release [no-cache=(yes|no)] [VERSION=] [TAGS=t1,t2,...]
 
 release: | image tags push
 
