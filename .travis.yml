@@ -1,13 +1,20 @@
 language: bash
 
-sudo: required
+sudo: false
 
 services:
   - docker
 
+env:
+  - Dockerfile=2
+  - Dockerfile=1
+
+before_script:
+  - make image DOCKERFILE=$Dockerfile VERSION=test
+  - make deps.bats
+
 script:
-  - make image no-cache=yes VERSION=testing
-  - make test VERSION=testing
+  - make test DOCKERFILE=$Dockerfile VERSION=test
 
 notifications:
   email:
