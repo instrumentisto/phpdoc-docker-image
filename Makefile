@@ -234,7 +234,7 @@ endif
 # Resolve project dependencies for running tests.
 #
 # Usage:
-#	make deps-test [BATS_VER=<bats-version>]
+#	make deps.bats [BATS_VER=<bats-version>]
 
 BATS_VER ?= 0.4.0
 
