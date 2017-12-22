@@ -27,8 +27,6 @@ TAGS ?= $(word 2,$(subst :, ,$(word 1,$(ALL_IMAGES))))
 
 
 comma := ,
-empty :=
-space := $(empty) $(empty)
 eq = $(if $(or $(1),$(2)),$(and $(findstring $(1),$(2)),\
                                 $(findstring $(2),$(1))),1)
 
@@ -103,7 +101,7 @@ release-all:
 # Generate Docker image sources.
 #
 # Usage:
-#	make src [DOCKERFILE=<dockerfile-dir>]
+#	make src [DOCKERFILE=<dockerfile-dir>] [VERSION=<phpdoc-version>]
 #	         [TAGS=<docker-tag-1>[,<docker-tag-2>...]]
 
 src: dockerfile post-push-hook
@@ -130,7 +128,7 @@ src-all:
 #
 # Usage:
 #	make dockerfile [DOCKERFILE=<dockerfile-dir>]
-#	                [TAGS=<docker-tag-1>[,<docker-tag-2>...]]
+#	                [VERSION=<phpdoc-version>]
 
 dockerfile:
 	mkdir -p $(DOCKERFILE)
@@ -192,7 +190,7 @@ post-push-hook-all:
 
 
 
-# Runs Bats tests for project Docker image.
+# Run Bats tests for Docker image.
 #
 # Documentation of Bats:
 #	https://github.com/sstephenson/bats
