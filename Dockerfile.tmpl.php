@@ -33,6 +33,11 @@ RUN curl -fL -o /usr/local/bin/phpdoc \
 # Tune up php.ini
 RUN echo "error_reporting = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED & ~E_WARNING" \
         > /usr/local/etc/php/conf.d/errors.ini
+
+# Install required packages
+RUN apk add --update --no-cache \
+            make \
+ && rm -rf /var/cache/apk/*
 <? } ?>
 <? if (!$isPhpDocV1) { ?>
 
@@ -41,6 +46,7 @@ RUN echo "error_reporting = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED & ~E_W
 RUN apk add --update --no-cache \
             graphviz \
             icu-libs libxslt \
+            make \
     \
  && apk add --no-cache --virtual .build-deps \
             icu-dev libxslt-dev \

@@ -17,6 +17,7 @@ RUN curl -fL -o /usr/local/bin/phpdoc \
 RUN apk add --update --no-cache \
             graphviz \
             icu-libs libxslt \
+            make \
     \
  && apk add --no-cache --virtual .build-deps \
             icu-dev libxslt-dev \

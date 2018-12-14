@@ -18,6 +18,11 @@ RUN pear install PhpDocumentor-1.4.4 \
 RUN echo "error_reporting = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED & ~E_WARNING" \
         > /usr/local/etc/php/conf.d/errors.ini
 
+# Install required packages
+RUN apk add --update --no-cache \
+            make \
+ && rm -rf /var/cache/apk/*
+
 
 VOLUME ["/app"]
 
