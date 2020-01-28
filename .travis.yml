@@ -10,11 +10,11 @@ env:
   - Dockerfile=1
 
 before_script:
-  - make image DOCKERFILE=$Dockerfile VERSION=test
+  - make image dockerfile=$Dockerfile tag=test
   - make deps.bats
 
 script:
-  - make test DOCKERFILE=$Dockerfile VERSION=test
+  - make test dockerfile=$Dockerfile tag=test
 
 notifications:
   email:
