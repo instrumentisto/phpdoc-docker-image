@@ -8,8 +8,8 @@ phpDocumentor Docker Image
 
 ## Supported tags and respective `Dockerfile` links
 
-- `2.9.0`, `2.9`, `2`, `latest` [(2/Dockerfile)][101]
-- `1.4.4`, `1.4`, `1` [(1/Dockerfile)][102]
+- [`2.9.0`, `2.9`, `2`, `latest`][101]
+- [`1.4.4`, `1.4`, `1`][102]
 
 
 
@@ -58,11 +58,15 @@ docker run --rm -v $(pwd):/app --entrypoint vendor/bin/phpdoc instrumentisto/php
 
 ## License
 
-phpDocumentor 2 is licensed under [MIT license][91].
+phpDocumentor 2 is licensed under [MIT license][92].
 
-phpDocumentor 1 is licensed under [LGPL license][92].
+phpDocumentor 1 is licensed under [LGPL license][93].
 
-phpDocumentor Docker images are licensed under [MIT license][90].
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
+
+The [sources][91] for producing `instrumentisto/phpdoc` Docker images are licensed under [Blue Oak Model License 1.0.0][90].
 
 
 
@@ -77,8 +81,11 @@ If you have any problems with or questions about this image, please contact us t
 
 
 [1]: https://github.com/instrumentisto/phpdoc-docker-image/issues
+
 [90]: https://github.com/instrumentisto/phpdoc-docker-image/blob/master/LICENSE.md
-[91]: https://github.com/phpDocumentor/phpDocumentor2/blob/develop/LICENSE
-[92]: https://www.gnu.org/licenses/lgpl.html
+[91]: https://github.com/instrumentisto/phpdoc-docker-image
+[92]: https://github.com/phpDocumentor/phpDocumentor2/blob/develop/LICENSE
+[93]: https://www.gnu.org/licenses/lgpl.html
+
 [101]: https://github.com/instrumentisto/phpdoc-docker-image/blob/master/2/Dockerfile
 [102]: https://github.com/instrumentisto/phpdoc-docker-image/blob/master/1/Dockerfile
