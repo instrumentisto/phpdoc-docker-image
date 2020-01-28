@@ -8,7 +8,7 @@ phpDocumentor Docker Image
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`2.9.0`, `2.9`, `2`, `latest`][101]
+- [`2.9.1`, `2.9`, `2`, `latest`][101]
 - [`1.4.4`, `1.4`, `1`][102]
 
 

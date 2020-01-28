@@ -51,6 +51,12 @@
   [ "$status" -eq 0 ]
 }
 
+@test "PHP ext 'zip' is installed" {
+  [ "$DOCKERFILE" == "1" ] && skip
+  run docker run --rm --entrypoint sh $IMAGE -c 'php -m | grep -Fx zip'
+  [ "$status" -eq 0 ]
+}
+
 
 @test "Graphviz library is installed" {
   [ "$DOCKERFILE" == "1" ] && skip

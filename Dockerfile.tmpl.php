@@ -10,7 +10,7 @@ $PhpDocVer = reset(explode('-', $var['version']));
 <? if ($isPhpDocV1) { ?>
 FROM php:5.6-alpine
 <? } else { ?>
-FROM php:7.1-alpine
+FROM php:7.4-alpine
 <? } ?>
 
 MAINTAINER Instrumentisto Team <developer@instrumentisto.com>
@@ -45,12 +45,12 @@ RUN apk add --update --no-cache \
 # Install required PHP extensions and packages
 RUN apk add --update --no-cache \
             graphviz \
-            icu-libs libxslt \
+            icu-libs libxslt libzip \
             make \
     \
  && apk add --no-cache --virtual .build-deps \
-            icu-dev libxslt-dev \
- && docker-php-ext-install intl xsl \
+            icu-dev libxslt-dev libzip-dev \
+ && docker-php-ext-install intl xsl zip \
     \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/*

@@ -18,7 +18,7 @@ eq = $(if $(or $(1),$(2)),$(and $(findstring $(1),$(2)),\
 
 IMAGE_NAME := instrumentisto/phpdoc
 ALL_IMAGES := \
-	2:2.9.0,2.9,2,latest \
+	2:2.9.1,2.9,2,latest \
 	1:1.4.4,1.4,1
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
