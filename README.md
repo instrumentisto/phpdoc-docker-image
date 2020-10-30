@@ -6,6 +6,17 @@ phpDocumentor Docker Image
 
 
 
+## Status
+
+__PROJECT IS CLOSED AND ARCHIVED. NO MAINTAINING WILL BE CONTINUED.__
+
+[phpDocumentor v3.0.0 is here](https://github.com/phpDocumentor/phpDocumentor/releases/tag/v3.0.0)
+
+Consider to use [official `phpdoc/phpdoc` Docker image](https://hub.docker.com/r/phpdoc/phpdoc) instead ([source repo](https://github.com/phpDocumentor/phpDocumentor/blob/master/Dockerfile)).
+
+
+
+
 ## Supported tags and respective `Dockerfile` links
 
 - [`2.9.1`, `2.9`, `2`, `latest`][101]
@@ -22,10 +33,10 @@ and DocBlock comments to generate a complete set of API Documentation.
 Inspired by phpDocumentor 1 and JavaDoc it continues to innovate and is up to
 date with the latest technologies and PHP language features.
 
-> [www.phpdoc.org (phpDocumentor 2)](https://www.phpdoc.org)  
-> [github.com/phpDocumentor/phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2)
+> [www.phpdoc.org (phpDocumentor)](https://www.phpdoc.org)  
+> [github.com/phpDocumentor/phpDocumentor](https://github.com/phpDocumentor/phpDocumentor/tree/v2.9.1)
 
-![phpDocumentor 2 Logo](https://www.phpdoc.org/bundles/phpdocumentorwebsite/images/logo2.png)
+![phpDocumentor 2 Logo](https://raw.githubusercontent.com/phpDocumentor/phpdoc.org/7ff02b0b1041bf0c298937a73e9fa557b2a8da66/src/phpDocumentor/WebsiteBundle/Resources/public/images/logo2.png)
 
 > [manual.phpdoc.org (phpDocumentor 1)](https://manual.phpdoc.org)  
 > [pear.php.net/package/PhpDocumentor](https://pear.php.net/package/PhpDocumentor)
@@ -84,7 +95,7 @@ If you have any problems with or questions about this image, please contact us t
 
 [90]: https://github.com/instrumentisto/phpdoc-docker-image/blob/master/LICENSE.md
 [91]: https://github.com/instrumentisto/phpdoc-docker-image
-[92]: https://github.com/phpDocumentor/phpDocumentor2/blob/develop/LICENSE
+[92]: https://github.com/phpDocumentor/phpDocumentor/blob/v2.9.1/LICENSE
 [93]: https://www.gnu.org/licenses/lgpl.html
 
 [101]: https://github.com/instrumentisto/phpdoc-docker-image/blob/master/2/Dockerfile
